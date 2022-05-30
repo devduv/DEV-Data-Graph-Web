@@ -23,10 +23,7 @@ export class ChartService {
       yesterday,
       today,
       this.configGlobal.getConfiguration().times_to_show
-    )/* .map(h => {
-      if (h.name == '00:30') h.name = `${today} ${h.name}`;
-      return h;
-    }) */;
+    );
     
   }
 

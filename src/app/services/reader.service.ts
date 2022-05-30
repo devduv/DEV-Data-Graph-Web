@@ -78,11 +78,14 @@ export class ReaderService {
   randomColor() {
     return Math.floor(Math.random() * 16777215).toString(16);
   }
+
   getBody(split_data: any[]) {
     let data: any[] = [];
     let i = 0;
     split_data.forEach((d) => {
-      if (d != '') {
+      
+      if (d.trim().length !== 0) {
+        
         let data_element = this.spliter(d);
 
         let label = data_element[1];
@@ -100,6 +103,7 @@ export class ReaderService {
         }
       }
     });
+    
     return data;
   }
 

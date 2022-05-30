@@ -1,5 +1,5 @@
 {
     "file": "./assets/data/ExcelGrafica.txt",
-    "times_to_show": 96,
-    "refresh_time": 5
+    "times_to_show": 48,
+    "refresh_time": 10
 }

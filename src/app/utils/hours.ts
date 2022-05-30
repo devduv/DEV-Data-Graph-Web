@@ -21,7 +21,7 @@ export class Hours {
 
     let todayHours = this.getHours(schedules, today, currentMin, currentMax);
 
-    let yesterdayHours;
+    let yesterdayHours:any[] =[];
     let anteyesterdayHours: any[] = [];
     if (todayHours.length < maxTimes) {
       let empty = maxTimes - todayHours.length;
