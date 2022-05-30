@@ -39,6 +39,7 @@ let beforeYesterday = ''; // ...
 let hours = ['2022-05-04 10:30', '2022-05-04 11:00', ...];
 ```
 
+![Data Graph Web](https://raw.githubusercontent.com/devduv/data-graph-web/master/src/assets/Captura.JPG)
 
 
 ## Development server
