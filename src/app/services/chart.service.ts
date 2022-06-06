@@ -31,19 +31,19 @@ export class ChartService {
     return this.calendarService.getDateTime();
   }
 
-  public getData(body: any) {
-    this.getDatasets(body);
+  public getData(body: any, tc: number) {
+    this.getDatasets(body, tc);
     return body;
   }
 
-  public getDatasets(body: any) {
+  public getDatasets(body: any, tc: number) {
     this.loadHeaders();
     ChartService.HEADERS.forEach((hour) => {
       body.forEach((b: any) => {
         let total = null;
         b.value.forEach((v: any) => {
           if (hour.startHour == v.hour) {
-            total = v.total;
+            total = v.total / tc;
           }
         });
         b.data.push(total);

@@ -1,5 +1,6 @@
 {
     "file": "./assets/data/ExcelGrafica.txt",
     "times_to_show": 48,
-    "refresh_time": 10
+    "refresh_time": 10,
+    "title": "Costos Marginales en tiempo real"
 }

@@ -6,7 +6,7 @@ import { ConfigurationService } from './services/configuration.service';
   providedIn: 'root',
 })
 export class AppConfig {
-  public configuration: Configuration = {};
+  private configuration: Configuration = {};
 
   constructor(private configurationService: ConfigurationService) {}
 

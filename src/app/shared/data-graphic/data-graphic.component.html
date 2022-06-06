@@ -1,6 +1,23 @@
-<div class="date-show">{{today}}</div>
-<div style="overflow-x: auto">
+<div style="display: flex">
+  <form [formGroup]="formTC" class="tc_content" (ngSubmit)="update()">
+    <div style="font-weight: bold">Tipo de Cambio:</div>
+    <input
+      class="input_tc"
+      type="text"
+      name="tc"
+      formControlName="tc"
+      size="small"
+      pattern="^[0-9]+\.?[0-9]*$"
+      required
+      placeholder="1.00"
+      (keypress)="onKeyPress($event)"
+    />
 
+    <button class="btn_tc">Actualizar</button>
+  </form>
+  <div class="date-show">{{ today }}</div>
+</div>
+<div style="overflow-x: auto">
   <div style="width: 100%; height: 500px">
     <canvas id="canvasId" width="100" height="100"></canvas>
   </div>
